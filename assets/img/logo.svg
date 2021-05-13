@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375pt" height="374.999991pt" viewBox="0 0 375 374.999991" version="1.2">
+<defs>
+<g>
+<symbol overflow="visible" id="glyph0-0">
+<path style="stroke:none;" d="M 53.246094 -72.273438 L 53.246094 -88.921875 L 0 -88.921875 L 0 -36.863281 L 36.601562 -45.054688 L 36.601562 -16.648438 L 0 -16.648438 L 0 0 L 53.246094 0 L 53.246094 -62.761719 L 16.648438 -56.417969 L 16.648438 -72.273438 Z M 53.246094 -72.273438 "/>
+</symbol>
+<symbol overflow="visible" id="glyph0-1">
+<path style="stroke:none;" d="M 53.246094 0 L 53.246094 -16.648438 L 16.648438 -16.648438 L 16.648438 -38.582031 L 39.769531 -38.582031 L 42.28125 -55.230469 L 16.648438 -55.230469 L 16.648438 -72.140625 L 53.246094 -72.140625 L 53.246094 -88.660156 L 0 -88.789062 L 0 0 Z M 53.246094 0 "/>
+</symbol>
+<symbol overflow="visible" id="glyph0-2">
+<path style="stroke:none;" d="M 52.984375 -72.40625 L 52.984375 -89.054688 L 0 -89.054688 L 0 0 L 52.984375 0 L 52.984375 -16.648438 L 16.648438 -16.648438 L 16.648438 -72.40625 Z M 52.984375 -72.40625 "/>
+</symbol>
+<symbol overflow="visible" id="glyph0-3">
+<path style="stroke:none;" d="M 0 -88.921875 L 0 0 L 16.648438 0 L 16.648438 -72.273438 L 36.601562 -72.273438 L 36.601562 -53.910156 L 19.554688 -53.910156 L 36.601562 0 L 53.246094 0 L 40.828125 -37.261719 L 53.246094 -37.261719 L 53.246094 -88.921875 Z M 0 -88.921875 "/>
+</symbol>
+<symbol overflow="visible" id="glyph0-4">
+<path style="stroke:none;" d="M 53.246094 -88.921875 L 0 -88.921875 L 0 -72.273438 L 18.367188 -72.273438 L 18.367188 0 L 35.015625 0 L 35.015625 -72.273438 L 53.246094 -72.273438 Z M 53.246094 -88.921875 "/>
+</symbol>
+<symbol overflow="visible" id="glyph0-5">
+<path style="stroke:none;" d="M 0 -88.921875 L 0 0 L 16.648438 0 L 16.648438 -27.613281 L 36.601562 -27.613281 L 36.601562 0 L 53.246094 0 L 53.246094 -88.921875 Z M 36.601562 -44.261719 L 16.648438 -44.261719 L 16.648438 -72.273438 L 36.601562 -72.273438 Z M 36.601562 -44.261719 "/>
+</symbol>
+</g>
+</defs>
+<g id="surface1">
+<g style="fill:rgb(100%,100%,100%);fill-opacity:1;">
+  <use xlink:href="#glyph0-0" x="37.500002" y="142.78127"/>
+</g>
+<g style="fill:rgb(100%,100%,100%);fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="101.450577" y="142.78127"/>
+</g>
+<g style="fill:rgb(100%,100%,100%);fill-opacity:1;">
+  <use xlink:href="#glyph0-2" x="165.401151" y="142.78127"/>
+</g>
+<g style="fill:rgb(100%,100%,100%);fill-opacity:1;">
+  <use xlink:href="#glyph0-3" x="37.500002" y="243.451039"/>
+</g>
+<g style="fill:rgb(100%,100%,100%);fill-opacity:1;">
+  <use xlink:href="#glyph0-1" x="101.450577" y="243.451039"/>
+</g>
+<g style="fill:rgb(100%,100%,100%);fill-opacity:1;">
+  <use xlink:href="#glyph0-4" x="165.401151" y="243.451039"/>
+</g>
+<g style="fill:rgb(100%,100%,100%);fill-opacity:1;">
+  <use xlink:href="#glyph0-4" x="37.500002" y="344.120808"/>
+</g>
+<g style="fill:rgb(100%,100%,100%);fill-opacity:1;">
+  <use xlink:href="#glyph0-5" x="101.450577" y="344.120808"/>
+</g>
+</g>
+</svg>
