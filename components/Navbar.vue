@@ -4,11 +4,11 @@
             <img src="@/assets/img/logo.svg" class="logo"/>
         </div>
         <div class="navlinks">
-            <a>Início</a>
+            <a href="/">Início</a>
             <a>Documentação</a>
         </div>
         <div class="button"></div>
-        <b-button variant="outline-light">Login</b-button>
+        <b-button type="link" href="/login" variant="outline-light">Login</b-button>
     </div>
 </template>
 
@@ -32,15 +32,19 @@
 
 
 a {
+    text-decoration: none;
+    color: white;
     margin: 0vw 3vw;
     display: inline;
 }
 
 a:hover {
+    color: white;
     font-weight: 500;
 }
 
 a:active {
+    color: white;
     font-weight: 500;
 }
 
