@@ -9,8 +9,13 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@fortawesome/free-regular-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@nuxtjs/fontawesome": "^1.1.2",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "scrollreveal": "^4.0.9",
+    "vue-scroll-reveal": "^1.0.11"
   }
 }

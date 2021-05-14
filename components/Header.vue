@@ -1,9 +1,14 @@
 <template>
     <div>
         <div class="phrase">
-            Sua secretária virtual.
+            <nobr>Sua <span id="title">secretária</span> virtual.</nobr>
             <div class="signup">
-                <b-form-input class="mail" v-model="text" placeholder="Seu e-mail"></b-form-input><b-button block variant="light">Entre na lista de espera</b-button>
+                <b-input-group class="mt-3">
+                    <b-form-input class="mail" v-model="text" placeholder="Seu e-mail"></b-form-input>
+                    <b-input-group-append>
+                        <b-button block variant="light">Entre na lista de espera</b-button>
+                        </b-input-group-append>                    
+                </b-input-group>                
             </div>
         </div>
     </div>
@@ -11,7 +16,6 @@
 
 <script>
     export default {
-        
     }
 </script>
 
@@ -26,6 +30,7 @@
     font-size: 5em;
     min-height: 60vh;
     padding: 15vh;
+    white-space:nowrap;
 }
 
 .signup {
@@ -41,5 +46,15 @@
 .mail {
     background-color: transparent;
 }
+
+span {
+    white-space:normal;
+    display: inline;
+    background: -webkit-linear-gradient(bottom,#cd32fc, #42f5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 
 </style>

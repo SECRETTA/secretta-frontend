@@ -1,6 +1,7 @@
 <template>
     <div class="login">
         <div class="login-form">
+            <h3>Acesse seu painel de controle.</h3>
             <b-form-input 
                 class="login-input"
                 v-model="form.email"
@@ -45,15 +46,15 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    padding: 25vh 0vw;
+    padding: 15vh 0vw;
 }
 
 .login-form {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    max-width: 20vw;
     padding: 2vh;
+    min-width: 30vw;
     color: white;
     box-shadow: 0 0 1em black;
 }

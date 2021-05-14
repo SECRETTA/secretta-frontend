@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        Secretta 2021
+        Secretta <fa-icon :icon="['far', 'copyright']" class="icon"/> 2021
     </div>
 </template>
 
@@ -13,11 +13,21 @@
 <style scoped>
 
 .footer { 
+    max-height: 10vh;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     color: white;
     font-size: 1em;
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+}
+
+.icon {
+    margin: 0vw 1vw;
 }
 
 </style>

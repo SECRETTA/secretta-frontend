@@ -6,9 +6,10 @@
         <div class="navlinks">
             <a href="/">Início</a>
             <a>Documentação</a>
+            <a>Planos</a>
         </div>
         <div class="button"></div>
-        <b-button type="link" href="/login" variant="outline-light">Login</b-button>
+        <b-button pill type="link" href="/login" variant="outline-light">Login</b-button>
     </div>
 </template>
 
@@ -49,16 +50,20 @@ a:active {
 }
 
 .logo {
-    height: 13vh;
+    height: 10vh;
     width: auto;
     display: inline;
     justify-self: center;
+    border: 1px white solid;
 }
 
 .navlinks {
     display: inherit;
     justify-items: center;
     padding: 0vw 5vw;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%);
 }
 
 .brand {
