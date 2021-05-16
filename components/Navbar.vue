@@ -9,7 +9,7 @@
             <a>Planos</a>
         </div>
         <div class="button"></div>
-        <b-button pill type="link" href="/login" variant="outline-light">Login</b-button>
+        <b-button pill type="link" href="/" variant="outline-light">Login</b-button>
     </div>
 </template>
 

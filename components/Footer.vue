@@ -13,7 +13,7 @@
 <style scoped>
 
 .footer { 
-    max-height: 10vh;
+    max-height: 20vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -21,9 +21,10 @@
     align-items: center;
     color: white;
     font-size: 1em;
-    position: absolute;
+    position: relative;
     bottom: 5%;
     left: 0%;
+    margin-top: 30vh;
 }
 
 .icon {

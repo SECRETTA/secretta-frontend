@@ -28,8 +28,8 @@
     align-items: center;
     color: white;
     font-size: 5em;
-    min-height: 60vh;
-    padding: 15vh;
+    min-height: 65vh;
+    padding: 17vh;
     white-space:nowrap;
 }
 

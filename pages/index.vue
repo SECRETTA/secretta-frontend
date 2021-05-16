@@ -3,6 +3,8 @@
     <div>
       <Navbar />
       <Header />
+      <Example1 />
+      <Example2 />
       <Footer />
     </div>
   </div>

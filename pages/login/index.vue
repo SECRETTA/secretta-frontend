@@ -14,10 +14,7 @@ export default {}
 
 <style>
 .container {
-    background-color: black;
-  background-image: url('@/assets/img/login-background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--primary-color);
   margin: 0 auto;
   min-height: 100vh;
   min-width: 100vw;

@@ -1,11 +1,11 @@
 <template>
     <div class="row">
-        <div class="img-content" data-aos="fade-right">
-            <b-img src="@/assets/img/4.png" data-aos="fade-right" />
-        </div>
         <div class="text">
-            <h1>Disponível o tempo todo</h1>
-            <p>Sem mais preocupações quanto a marcar atendimentos fora do horário comercial.</p>
+            <h1>Personalize a sua disponibilidade</h1>
+            <p>Você pode estabelezer a sua disponibilidade de atendimento com base em um padrão semanal ou de forma personalizada, dia a dia.</p>
+        </div>
+        <div class="img-content" data-aos="fade-right">
+            <b-img src="@/assets/img/3.png" data-aos="fade-right" />
         </div>
     </div>
 </template>
@@ -44,8 +44,8 @@
 .text {
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    text-align: left;
+    justify-content: left;
+    text-align: right;
     color: white;
     position: relative;
     max-width: 45%;
