@@ -1,5 +1,5 @@
 <template>
-    <div class="img-content" :class="position">
+    <div class="img-content" :data-aos="position">
         <b-img :src="getImageURL(name)" />
     </div>
 </template>
@@ -23,13 +23,5 @@
 .img-content {
     display: flex;
     flex-direction: column;
-}
-
-.left {
-    justify-content: left;
-}
-
-.right {
-    justify-content: right;
 }
 </style>
