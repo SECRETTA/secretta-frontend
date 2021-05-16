@@ -4,11 +4,11 @@
             <nobr>Sua <span id="title">secretária</span> virtual.</nobr>
             <div class="signup">
                 <b-input-group class="mt-3">
-                    <b-form-input class="mail" v-model="text" placeholder="Seu e-mail"></b-form-input>
+                    <b-form-input class="mail" v-model="email" placeholder="Seu e-mail"></b-form-input>
                     <b-input-group-append>
-                        <b-button block variant="light">Entre na lista de espera</b-button>
-                        </b-input-group-append>                    
-                </b-input-group>                
+                        <b-button block variant="light" @click="registerEmail">Entre na lista de espera</b-button>
+                        </b-input-group-append>
+                </b-input-group>
             </div>
         </div>
     </div>
@@ -16,6 +16,27 @@
 
 <script>
     export default {
+      data: {
+        email : "",
+        timestamp : ""
+      },
+      methods:{
+        registerEmail() {
+          this.timestamp = new Date(Date.now()).toISOString().slice(0, 19).replace('T', ' ');
+          fetch('/api/email',
+          {
+            headers: { 'Content-Type': 'application/json'},
+            method: 'post',
+            body: JSON.stringify({
+              'Email': this.email,
+              'Timestamp': this.timestamp
+            })
+          })
+          .then(res => {
+            console.log(res);
+          })
+        }
+      }
     }
 </script>
 
