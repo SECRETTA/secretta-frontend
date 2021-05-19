@@ -1,11 +1,11 @@
 <template>
     <div class="row">
-        <div class="text">
+        <div class="text" data-aos-delay="200" data-aos="fade-right">
             <h1>Personalize a sua disponibilidade</h1>
             <p>Você pode estabelezer a sua disponibilidade de atendimento com base em um padrão semanal ou de forma personalizada, dia a dia.</p>
         </div>
-        <div class="img-content" data-aos-delay="500">
-            <b-img src="@/assets/img/3.png" data-aos="fade-left" />
+        <div class="img-content" data-aos-delay="200" data-aos="fade-left">
+            <b-img src="@/assets/img/3.png" />
         </div>
     </div>
 </template>

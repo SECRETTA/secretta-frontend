@@ -1,9 +1,9 @@
 <template >
     <div class="row">
-        <div class="img-content">
-            <b-img src="@/assets/img/4.png" data-aos="fade-right" />
+        <div class="img-content" data-aos="fade-right">
+            <b-img src="@/assets/img/4.png" />
         </div>
-        <div class="text">
+        <div class="text" data-aos="fade-left">
             <h1>Disponível o tempo todo</h1>
             <p>Sem mais preocupações quanto a marcar atendimentos fora do horário comercial.</p>
         </div>
