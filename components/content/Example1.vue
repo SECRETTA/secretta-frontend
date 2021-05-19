@@ -1,6 +1,6 @@
-<template>
+<template >
     <div class="row">
-        <div class="img-content" data-aos="fade-right">
+        <div class="img-content">
             <b-img src="@/assets/img/4.png" data-aos="fade-right" />
         </div>
         <div class="text">

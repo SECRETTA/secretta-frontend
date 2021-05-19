@@ -8,14 +8,15 @@
             <a>Documentação</a>
             <a>Planos</a>
         </div>
-        <div class="button"></div>
-        <b-button pill type="link" href="/" variant="outline-light">Login</b-button>
+        <div class="button">
+          <b-button pill type="link" href="/login" variant="outline-light">Login</b-button>
+        </div>
     </div>
 </template>
 
 <script>
     export default {
-        
+
     }
 </script>
 
@@ -28,9 +29,7 @@
     font-size: 1.5em;
     padding: 1vh 5vw;
     top: 0;
-    
 }
-
 
 a {
     text-decoration: none;
@@ -60,10 +59,9 @@ a:active {
 .navlinks {
     display: inherit;
     justify-items: center;
-    padding: 0vw 5vw;
-    position: absolute;
-    right: 50%;
-    transform: translate(50%);
+    padding-right: 15vw;
+    position: relative;
+    width: 50%;
 }
 
 .brand {
@@ -74,8 +72,7 @@ a:active {
 
 .button {
     display: inherit;
-    justify-items: right;
-    padding: 0vw 5vw;
+    position: relative;
 }
 
 

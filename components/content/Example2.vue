@@ -4,8 +4,8 @@
             <h1>Personalize a sua disponibilidade</h1>
             <p>Você pode estabelezer a sua disponibilidade de atendimento com base em um padrão semanal ou de forma personalizada, dia a dia.</p>
         </div>
-        <div class="img-content" data-aos="fade-right">
-            <b-img src="@/assets/img/3.png" data-aos="fade-right" />
+        <div class="img-content" data-aos-delay="500">
+            <b-img src="@/assets/img/3.png" data-aos="fade-left" />
         </div>
     </div>
 </template>
