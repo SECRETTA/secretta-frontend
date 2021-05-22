@@ -1,6 +1,11 @@
 :root {
+    --background-color: #311847;
     --primary-color: #0c0f27;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
 }
 
+.title {
+    font-family: 'Unica One', cursive;
+    color: #ef5d60;
+}

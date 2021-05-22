@@ -74,7 +74,7 @@
 span {
     white-space:normal;
     display: inline;
-    background: -webkit-linear-gradient(bottom,#cd32fc, #42f5e9);
+    background: -webkit-linear-gradient(bottom,#a01a7d, #ef5d60);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

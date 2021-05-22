@@ -2,6 +2,7 @@
     <div class="navbar">
         <div class="brand">
             <img src="@/assets/img/logo.svg" class="logo"/>
+            <p class="title">kairós</p>
         </div>
         <div class="navlinks">
             <a href="/">Início</a>
@@ -24,10 +25,10 @@
 .navbar {
     display: flex;
     flex-direction: row;
-    min-height: 15vh;
+    max-height: 15vh;
     color: white;
     font-size: 1.5em;
-    padding: 1vh 5vw;
+    padding: 3vh 5vw;
     top: 0;
 }
 
@@ -49,16 +50,24 @@ a:active {
 }
 
 .logo {
-    height: 10vh;
+    height: 5vh;
     width: auto;
     display: inline;
-    justify-self: center;
-    border: 1px white solid;
 }
+
+.title {
+    font-family: 'Unica One', cursive;
+    color: #ef5d60;
+    font-size: 5vh;
+    display: inline;
+    margin: 0vh 1vw;
+}
+
 
 .navlinks {
     display: inherit;
     justify-items: center;
+    align-items: center;
     padding-right: 15vw;
     position: relative;
     width: 50%;
@@ -66,6 +75,8 @@ a:active {
 
 .brand {
     display: inherit;
+    justify-items: center;
+    align-items: center;
     justify-items: left;
     padding: 0vw 5vw;
 }
