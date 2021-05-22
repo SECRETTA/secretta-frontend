@@ -2,7 +2,7 @@
     <div class="navbar">
         <div class="brand">
             <img src="@/assets/img/logo.svg" class="logo"/>
-            <p class="title">kairós</p>
+            <p class="title">secretta</p>
         </div>
         <div class="navlinks">
             <a href="/">Início</a>
