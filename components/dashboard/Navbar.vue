@@ -13,7 +13,7 @@
                     <fa-icon :icon="['fas', 'bars']" class="icon" />
                 </template>
                 <b-dropdown-text>
-                <b-form-checkbox switch size="lg">Large</b-form-checkbox>
+                <b-form-checkbox switch v-model="dark_mode" size="lg" class="mode-switch">{{dark_mode ? "Escuro" : "Claro"}}</b-form-checkbox>
                 </b-dropdown-text>
             </b-dropdown>
             <b-avatar size="5vh" style="margin-left:1vh;"></b-avatar>
@@ -23,8 +23,12 @@
 
 <script>
     export default {
-        
+        data() {
+            return {
+                dark_mode: false
+        }
     }
+}
 </script>
 
 <style scoped>
@@ -72,6 +76,10 @@
     margin:0 1vh;
     font-size: 4vh;
     padding: 0.5vh 0;
+    color: var(--first-color);
+}
+
+.mode-switch:checked {
     color: var(--first-color);
 }
 
