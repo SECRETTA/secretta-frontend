@@ -16,7 +16,7 @@ export default {}
 
 <style>
 .container {
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
   margin: 0 auto;
   min-height: 100vh;
   min-width: 100vw;

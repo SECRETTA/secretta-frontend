@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'kairós',
+    title: 'secretta',
     htmlAttrs: {
       lang: 'pt'
     },
@@ -61,7 +61,8 @@ export default {
       component: 'fa',
       suffix: true,
       icons: {
-        regular: true
+        regular: true,
+        solid: true
       }
     }]
   ],
