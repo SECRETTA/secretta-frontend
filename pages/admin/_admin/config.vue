@@ -20,7 +20,7 @@
     border-radius: 15px;
     box-sizing:border-box;
     color: var(--first-color);
-    width: 100%;
+    width: auto;
     min-height: 75vh;
     margin-right: 5vw;
 }

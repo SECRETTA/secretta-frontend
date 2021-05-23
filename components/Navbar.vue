@@ -5,12 +5,12 @@
             <p class="title">secretta</p>
         </div>
         <div class="navlinks">
-            <a href="/">Início</a>
-            <a>Documentação</a>
-            <a>Planos</a>
+            <NuxtLink to="/">Início</NuxtLink>
+            <NuxtLink to="/docs">Documentação</NuxtLink>
+            <NuxtLink to="/planos">Planos</NuxtLink>
         </div>
         <div class="button">
-          <b-button pill type="link" href="/login" variant="outline-light">Login</b-button>
+            <b-button pill prefetch=true to="/login" variant="outline-light">Login</b-button>
         </div>
     </div>
 </template>
@@ -25,6 +25,7 @@
 .navbar {
     display: flex;
     flex-direction: row;
+    align-items: center;
     max-height: 15vh;
     color: white;
     font-size: 1.5em;
@@ -41,15 +42,16 @@ a {
 
 a:hover {
     color: white;
-    font-weight: 500;
+    text-decoration: underline;
 }
 
 a:active {
     color: white;
-    font-weight: 500;
+    text-decoration: underline;
 }
 
 .logo {
+    float: left;
     height: 5vh;
     width: auto;
     display: inline;
@@ -65,16 +67,15 @@ a:active {
 
 
 .navlinks {
-    display: inherit;
-    justify-items: center;
+    display: flex;
+    justify-content: cen;
     align-items: center;
-    padding-right: 15vw;
     position: relative;
     width: 50%;
 }
 
 .brand {
-    display: inherit;
+    display: flex;
     justify-items: center;
     align-items: center;
     justify-items: left;
@@ -82,7 +83,7 @@ a:active {
 }
 
 .button {
-    display: inherit;
+    display: flex;
     position: relative;
 }
 

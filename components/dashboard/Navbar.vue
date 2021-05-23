@@ -12,7 +12,9 @@
                 <template #button-content>
                     <fa-icon :icon="['fas', 'bars']" class="icon" />
                 </template>
-                <b-dropdown-item href="#">Action</b-dropdown-item>
+                <b-dropdown-text>
+                <b-form-checkbox switch size="lg">Large</b-form-checkbox>
+                </b-dropdown-text>
             </b-dropdown>
             <b-avatar size="5vh" style="margin-left:1vh;"></b-avatar>
         </div>
@@ -70,6 +72,7 @@
     margin:0 1vh;
     font-size: 4vh;
     padding: 0.5vh 0;
+    color: var(--first-color);
 }
 
 </style>

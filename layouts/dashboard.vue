@@ -26,7 +26,7 @@
     flex-direction: row;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: auto;
     max-height: 75vh;
 }
 
