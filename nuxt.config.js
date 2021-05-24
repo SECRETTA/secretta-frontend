@@ -64,7 +64,8 @@ export default {
         regular: true,
         solid: true
       }
-    }]
+    }],
+    '@nuxtjs/color-mode'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

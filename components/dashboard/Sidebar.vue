@@ -4,6 +4,7 @@
             <NuxtLink to="/admin/home" class="sidebar-link"><fa-icon :icon="['fas','chart-pie']" class="icon" />Visão Geral</NuxtLink>
             <NuxtLink to="/admin/calendar" class="sidebar-link"><fa-icon :icon="['fas','calendar']" class="icon" />Calendário</NuxtLink>
             <NuxtLink to="/admin/config" class="sidebar-link"><fa-icon :icon="['fas','cog']" class="icon" />Configurações</NuxtLink>
+            <NuxtLink to="/admin/config" class="sidebar-link"><fa-icon :icon="['fas','cog']" class="icon" />Configurações</NuxtLink>
         </div>
         <div class="footer">
             <p>Secretta <fa-icon :icon="['far', 'copyright']" class="icon"/> 2021</p>
@@ -13,7 +14,6 @@
 
 <script>
     export default {
-        
     }
 </script>
 
@@ -28,6 +28,7 @@
     min-width: 15vw;
     min-height: 75%;
     border-radius: 15px;
+    box-shadow: 0 0 0.5em var(--boxshadow-color);
     justify-content: top;
     align-items: center;
     padding: 1vh;

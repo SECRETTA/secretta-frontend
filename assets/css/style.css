@@ -3,19 +3,19 @@
     --first-color: #ef5d60;
     --second-color: #EC4067;
     --third-color: #A01A7D;
+    --background-color: var(--primary-color);
+    --boxshadow-color: var(--card-color);
+    --sidebar-text: var(--primary-color);
+    --card-color: #221031;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-}
-
-.dark-mode {
-    --background-color: var(--primary-color);
-    --boxshadow-color: var(--second-color);
-    --sidebar-text: var(--primary-color);
+    font-size: 1em;
 }
 
 .light-mode {
-    --background-color: #dadada;
-    --boxshadow-color: #464646;
+    --background-color: #f5f5f5;
+    --boxshadow-color: #999999;
+    --card-color: #fff;
 }
 
 .title {

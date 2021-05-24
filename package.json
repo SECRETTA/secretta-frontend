@@ -20,5 +20,8 @@
     "nuxt-fontawesome": "^0.4.0",
     "scrollreveal": "^4.0.9",
     "vue-scroll-reveal": "^1.0.11"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^2.0.9"
   }
 }

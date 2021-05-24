@@ -12,8 +12,11 @@
                 <template #button-content>
                     <fa-icon :icon="['fas', 'bars']" class="icon" />
                 </template>
+                <b-dropdown-item class="menu-item"><fa-icon :icon="['fas', 'sign-out-alt']" class="icon" /> Sair</b-dropdown-item>
                 <b-dropdown-text>
-                <b-form-checkbox switch v-model="dark_mode" size="lg" class="mode-switch">{{dark_mode ? "Escuro" : "Claro"}}</b-form-checkbox>
+                    <b-form-checkbox switch v-model="dark_mode">
+                    </b-form-checkbox>
+                    <p>{{dark_mode ? "Escuro" : "Claro"}}</p>
                 </b-dropdown-text>
             </b-dropdown>
             <b-avatar size="5vh" style="margin-left:1vh;"></b-avatar>
@@ -79,8 +82,16 @@
     color: var(--first-color);
 }
 
-.mode-switch:checked {
-    color: var(--first-color);
+.mode-switch {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+.menu-item {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 </style>

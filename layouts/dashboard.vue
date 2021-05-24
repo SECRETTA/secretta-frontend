@@ -4,7 +4,7 @@
         
         <div class="page-content">
             <DashboardSidebar />
-            <Nuxt />
+            <Nuxt nuxt-child-key="dashboard_views" />
         </div>
     </div>
 </template>
@@ -17,7 +17,7 @@
 
 <style scoped>
 .content {
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     min-width: 100vw;
     min-height: 100vh;
 }
