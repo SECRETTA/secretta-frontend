@@ -64,12 +64,12 @@ export default {
         regular: true,
         solid: true
       }
-    }],
-    '@nuxtjs/color-mode'
+    }]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    // '@nuxtjs/color-mode',
     'bootstrap-vue/nuxt',
     ['nuxt-fontawesome', {
       component: 'fa',

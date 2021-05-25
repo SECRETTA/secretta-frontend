@@ -7,8 +7,10 @@
         
         <div class="user">
             <!-- <fa-icon :icon="['fas', 'search']" class="icon" /> -->
-            <fa-icon :icon="['far', 'bell']" class="icon" />
-            <b-dropdown size="sm"  variant="link" toggle-class="text-decoration-none" no-caret>
+            <!-- <fa-icon :icon="['far', 'bell']" class="icon" /> -->
+            <fa-icon :icon="['fas', dark_mode ? 'moon' : 'sun']" class="icon" v-on:click="dark_mode=!dark_mode"/>
+            <fa-icon :icon="['fas', 'sign-out-alt']" class="icon" />
+            <!-- <b-dropdown size="sm"  variant="link" toggle-class="text-decoration-none" no-caret>
                 <template #button-content>
                     <fa-icon :icon="['fas', 'bars']" class="icon" />
                 </template>
@@ -18,7 +20,7 @@
                     </b-form-checkbox>
                     <p>{{dark_mode ? "Escuro" : "Claro"}}</p>
                 </b-dropdown-text>
-            </b-dropdown>
+            </b-dropdown> -->
             <b-avatar size="5vh" style="margin-left:1vh;"></b-avatar>
         </div>
     </div>
@@ -28,7 +30,7 @@
     export default {
         data() {
             return {
-                dark_mode: false
+                dark_mode: true
         }
     }
 }
