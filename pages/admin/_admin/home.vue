@@ -1,7 +1,13 @@
 <template>
     <div class="home-container">
         <div class="home-grid">
-        <div class="card1"></div>
+        <div class="card1">
+            <b-skeleton-table
+            :rows="5"
+            :columns="1"
+            :table-props="{ borderless: true, striped: false }"
+            ></b-skeleton-table>
+        </div>
         <div class="card2"></div>
         <div class="card3"></div>
         <div class="card4"></div>
