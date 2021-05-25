@@ -7,18 +7,20 @@
     --boxshadow-color: var(--card-color);
     --sidebar-text: var(--primary-color);
     --card-color: #221031;
+    --text-color: var(--first-color);
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .light-mode {
     --background-color: #f5f5f5;
     --boxshadow-color: #999999;
     --card-color: #fff;
+    --text-color: var(--primary-color);
 }
 
-.title {
+.brand {
     font-family: 'Unica One', cursive;
     color: #ef5d60;
 }

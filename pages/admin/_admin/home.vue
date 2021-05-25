@@ -2,15 +2,23 @@
     <div class="home-container">
         <div class="home-grid">
         <div class="card1">
-            <b-skeleton-table
-            :rows="5"
+            <!-- <b-skeleton-wrapper> -->
+            <!-- <b-skeleton-table
+            :rows="4"
             :columns="1"
             :table-props="{ borderless: true, striped: false }"
-            ></b-skeleton-table>
+            ></b-skeleton-table> -->
+            <DashboardTitleCard />
+            <!-- </b-skeleton-wrapper> -->
         </div>
-        <div class="card2"></div>
-        <div class="card3"></div>
-        <div class="card4"></div>
+        <div class="card2">
+        </div>
+        <div class="card3">
+            <DashboardAppointCard />
+        </div>
+        <div class="card4">
+            <DashboardCalendar />
+        </div>
         <div class="card5"></div>
     </div>
     </div>
@@ -27,7 +35,7 @@
     display: flex;
     border-radius: 15px;
     box-sizing:border-box;
-    color: var(--first-color);
+    color: var(--text-color);
     min-height: 75vh; 
     min-width: 70vw;
     margin-right: 5vw;
@@ -42,6 +50,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     border-radius: 15px;
+    padding: 3vh;
     /* border: 1px var(--first-color) dashed; */
     background-color: var(--card-color);
     box-shadow: 0 0 1em 0.1px var(--boxshadow-color);
@@ -60,6 +69,7 @@
     grid-column: 3 / 4;
     grid-row: 1/ 2;
     border-radius: 15px;
+    padding: 3vh;
     /* border: 1px var(--first-color) dashed; */
     background-color: var(--card-color);
     box-shadow: 0 0 1em 0.1px var(--boxshadow-color);
@@ -69,6 +79,7 @@
     grid-column: 5 / 6;
     grid-row: 1/ 2;
     border-radius: 15px;
+    padding: 3vh;
     /* border: 1px var(--first-color) dashed; */
     background-color: var(--card-color);
     box-shadow: 0 0 1em 0.1px var(--boxshadow-color);
@@ -78,6 +89,7 @@
     grid-column: 3 / 6;
     grid-row: 3/ 4;
     border-radius: 15px;
+    padding: 3vh;
     /* border: 1px var(--first-color) dashed; */
     background-color: var(--card-color);
     box-shadow: 0 0 1em 0.1px var(--boxshadow-color);

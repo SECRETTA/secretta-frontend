@@ -8,7 +8,7 @@
         <div class="user">
             <!-- <fa-icon :icon="['fas', 'search']" class="icon" /> -->
             <!-- <fa-icon :icon="['far', 'bell']" class="icon" /> -->
-            <fa-icon :icon="['fas', dark_mode ? 'moon' : 'sun']" class="icon" v-on:click="dark_mode=!dark_mode; $colorMode.preference = dark_mode ? 'dark' : 'light'"/>
+            <fa-icon :icon="['fas', $colorMode.preference == 'dark' ? 'moon' : 'sun']" class="icon" v-on:click="dark_mode=!dark_mode; $colorMode.preference = dark_mode ? 'dark' : 'light'"/>
             <fa-icon :icon="['fas', 'sign-out-alt']" class="icon" />
             <!-- <b-dropdown size="sm"  variant="link" toggle-class="text-decoration-none" no-caret>
                 <template #button-content>

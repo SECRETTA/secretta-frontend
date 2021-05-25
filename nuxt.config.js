@@ -57,6 +57,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/vuetify',
     ['@nuxtjs/fontawesome', {
       component: 'fa',
       suffix: true,
@@ -71,7 +72,7 @@ export default {
   modules: [
     ['@nuxtjs/color-mode', {
       colorMode: {
-        preference: 'system', // default value of $colorMode.preference
+        preference: 'dark', // default value of $colorMode.preference
         fallback: 'light', // fallback value if not system preference found
         hid: 'nuxt-color-mode-script',
         globalName: '__NUXT_COLOR_MODE__',
