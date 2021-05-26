@@ -3,7 +3,9 @@
         <div class="calendar-grid">
         <div class="card1"></div>
         <div class="card2"></div>
-        <div class="card3"></div>
+        <div class="card3">
+            <DashboardCalendar />
+        </div>
     </div>
     </div>
 </template>

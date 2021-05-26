@@ -12,6 +12,7 @@
 <style scoped>
 .card-container {
     width: 100%;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

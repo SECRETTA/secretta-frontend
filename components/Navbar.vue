@@ -8,6 +8,7 @@
             <NuxtLink to="/">Início</NuxtLink>
             <NuxtLink to="/docs">Documentação</NuxtLink>
             <NuxtLink to="/planos">Planos</NuxtLink>
+            <NuxtLink to="/admin/home">Admin*</NuxtLink>
         </div>
         <div class="button">
             <b-button pill prefetch=true to="/login" variant="outline-light">Login</b-button>
