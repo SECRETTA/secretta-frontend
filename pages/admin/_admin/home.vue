@@ -2,24 +2,14 @@
     <div class="home-container">
         <div class="home-grid">
         <div class="card1">
-            <!-- <b-skeleton-wrapper> -->
-            <!-- <b-skeleton-table
-            :rows="4"
-            :columns="1"
-            :table-props="{ borderless: true, striped: false }"
-            ></b-skeleton-table> -->
             <DashboardTitleCard />
-            <!-- </b-skeleton-wrapper> -->
         </div>
         <div class="card2">
-        </div>
-        <div class="card3">
             <DashboardAppointCard />
         </div>
-        <div class="card4">
-            <DashboardCalendar />
+        <div class="card3">
+            <DashboardAppointTable />
         </div>
-        <div class="card5"></div>
     </div>
     </div>
 </template>
@@ -60,14 +50,15 @@
     grid-column: 1 / 2;
     grid-row: 3 / 4;
     border-radius: 15px;
+    padding: 3vh;
     /* border: 1px var(--first-color) dashed; */
     background-color: var(--card-color);
     box-shadow: 0 0 1em 0.1px var(--boxshadow-color);
 }
 
 .card3 {
-    grid-column: 3 / 4;
-    grid-row: 1/ 2;
+    grid-column: 3 / 6;
+    grid-row: 1/ 4;
     border-radius: 15px;
     padding: 3vh;
     /* border: 1px var(--first-color) dashed; */

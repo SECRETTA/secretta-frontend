@@ -2,8 +2,8 @@
     <div class="sidebar-content">
         <div class="links">
             <NuxtLink to="/admin/home" class="sidebar-link"><fa-icon :icon="['fas','chart-pie']" class="icon" />Visão Geral</NuxtLink>
-            <NuxtLink to="/admin/calendar" class="sidebar-link"><fa-icon :icon="['fas','calendar']" class="icon" />Calendário</NuxtLink>
-            <NuxtLink to="/admin/config" class="sidebar-link"><fa-icon :icon="['fas','user-friends']" class="icon" />Clientes</NuxtLink>
+            <!-- <NuxtLink to="/admin/calendar" class="sidebar-link"><fa-icon :icon="['fas','calendar']" class="icon" />Calendário</NuxtLink> -->
+            <!-- <NuxtLink to="/admin/config" class="sidebar-link"><fa-icon :icon="['fas','user-friends']" class="icon" />Clientes</NuxtLink> -->
             <NuxtLink to="/admin/config" class="sidebar-link"><fa-icon :icon="['fas','cog']" class="icon" />Configurações</NuxtLink>
         </div>
         <div class="footer">

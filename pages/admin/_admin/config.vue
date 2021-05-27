@@ -1,8 +1,12 @@
 <template>
     <div class="config-container">
         <div class="config-grid">
-        <div class="card1"></div>
-        <div class="card2"></div>
+        <div class="card1">
+            <DashboardAvailabilityForm />
+        </div>
+        <div class="card2">
+            <DashboardSettingsForm />
+        </div>
     </div>
     </div>
 </template>
@@ -33,6 +37,7 @@
     grid-column: 1 / 2;
     grid-row: 1 / 4;
     border-radius: 15px;
+    padding: 3vh;
     /* border: 1px var(--first-color) dashed; */
     background-color: var(--card-color);
     box-shadow: 0 0 1em 0.1px var(--boxshadow-color);
@@ -42,6 +47,7 @@
     grid-column: 3 / 6;
     grid-row: 1 / 4;
     border-radius: 15px;
+    padding: 3vh;
     /* border: 1px var(--first-color) dashed; */
     background-color: var(--card-color);
     box-shadow: 0 0 1em 0.1px var(--boxshadow-color);

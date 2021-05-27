@@ -1,5 +1,6 @@
 <template>
-    <div class="card-container">
+    <div class="form-container">
+        <h5>Configurações de usuário</h5>
     </div>
 </template>
 
@@ -10,12 +11,10 @@
 </script>
 
 <style scoped>
-.card-container {
+.form-container {
     width: 100%;
-    max-height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: var(--text-color);
 }
 </style>
