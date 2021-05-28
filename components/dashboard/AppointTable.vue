@@ -10,6 +10,8 @@
         borderless="true"
         per-page="7"
         :current-page="currentPage"
+        class="appoint-table"
+        :dark="$colorMode.preference == 'dark' ? true : false"
     ></b-table>
 
     <div class="pagination">
@@ -17,7 +19,7 @@
             v-model="currentPage" 
             per-page="7" 
             pills 
-            :total-rows="rows" 
+            :total-rows="rows"
             size="sm">
         </b-pagination>
     </div>
@@ -30,27 +32,16 @@
     data() {
       return {
         currentPage: 1,
-        sortBy: 'age',
+        today: '27/5/2021',
+        sortBy: 'date',
         sortDesc: false,
         fields: [
-          { key: 'last_name', sortable: true },
-          { key: 'first_name', sortable: true },
-          { key: 'age', sortable: true },
-          { key: 'isActive', sortable: false }
+          { key: 'customer_name', sortable: true, label: 'Nome' },
+          { key: 'task_date', sortable: true, label: 'Data' },
+          { key: 'task_time', sortable: false, label: 'Horário' }
         ],
         items: [
-          { isActive: true, age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
-          { isActive: false, age: 21, first_name: 'Larsen', last_name: 'Shaw' },
-          { isActive: false, age: 89, first_name: 'Geneva', last_name: 'Wilson' },
-          { isActive: true, age: 38, first_name: 'Jami', last_name: 'Carney' },
-          { isActive: true, age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
-          { isActive: false, age: 21, first_name: 'Larsen', last_name: 'Shaw' },
-          { isActive: false, age: 89, first_name: 'Geneva', last_name: 'Wilson' },
-          { isActive: true, age: 38, first_name: 'Jami', last_name: 'Carney' },
-          { isActive: true, age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
-          { isActive: false, age: 21, first_name: 'Larsen', last_name: 'Shaw' },
-          { isActive: false, age: 89, first_name: 'Geneva', last_name: 'Wilson' },
-          { isActive: true, age: 38, first_name: 'Jami', last_name: 'Carney' }
+          {customer_name: 'João Adamastor', task_date:'27/5/2021', task_time:'9h'}
         ]
       }
     },
@@ -58,6 +49,8 @@
       rows() {
         return this.items.length
       }
+    },
+    methods: {
     }
   }
 </script>
@@ -67,9 +60,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items:inherit;
     height: 100%;
 }
 
+.appoint-table {
+  color: var(--text-color);
+}
 </style>
 

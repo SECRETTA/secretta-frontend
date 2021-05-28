@@ -26,7 +26,7 @@
     position: relative;
     float: left;
     min-width: 15vw;
-    min-height: 75%;
+    min-height: 76%;
     border-radius: 15px;
     box-shadow: 0 0 0.5em var(--boxshadow-color);
     justify-content: top;
