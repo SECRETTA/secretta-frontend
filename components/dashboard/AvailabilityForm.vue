@@ -186,11 +186,12 @@
     display: flex;
     flex-direction: column;
     color: var(--text-color);
-    width: auto
+    width: auto;
+    padding: 3vh;
 }
 
 .form-day {
-    padding: 0.5vh 2vw;
+    padding: 0 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

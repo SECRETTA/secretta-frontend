@@ -2,7 +2,7 @@
     <div class="content">
         <div class="brand">
             <img src="@/assets/img/logo.svg" class="logo"/>
-            <p class="title">secretta</p>
+            <nuxt-link to="/"><p class="title">secretta</p></nuxt-link>
         </div>
         
         <div class="user">

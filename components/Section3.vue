@@ -1,11 +1,11 @@
 <template>
     <div class="row">
-        <div class="text" data-aos-delay="200" data-aos="fade-right">
-            <h1>Personalize a sua disponibilidade</h1>
-            <p>Você pode estabelezer a sua disponibilidade de atendimento com base em um padrão semanal ou de forma personalizada, dia a dia.</p>
+        <div class="img-content" data-aos-delay="200" data-aos="fade-right">
+            <b-img src="@/assets/img/analytics.png" />
         </div>
-        <div class="img-content" data-aos-delay="200" data-aos="fade-left">
-            <b-img src="@/assets/img/3.png" />
+        <div class="text" data-aos-delay="200" data-aos="fade-left">
+            <h1>Entenda a sua</h1>
+            <p>Você pode estabelezer a sua disponibilidade de atendimento com base em um padrão semanal ou de forma personalizada, dia a dia.</p>
         </div>
     </div>
 </template>
@@ -46,7 +46,7 @@
     flex-direction: column;
     justify-content: left;
     text-align: right;
-    color: white;
+    color: var(--first-color);
     position: relative;
     max-width: 45%;
     padding: 5vw;

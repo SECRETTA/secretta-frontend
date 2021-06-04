@@ -2,8 +2,8 @@
   <div class="container">
     <div>
       <Header />
-      <Example1 />
-      <Example2 />
+      <Section1 />
+      <Section2 />
     </div>
   </div>
 </template>

@@ -1,24 +1,28 @@
 <template>
-  <div class="container">
-    <div>
+    <div class="card-container">
       <Login />
     </div>
-  </div>
 </template>
 
 <script>
-export default {}
+export default {
+}
 </script>
 
-<style>
-.container {
-  background-color: var(--primary-color);
-  margin: 0 auto;
-  min-height: 100vh;
-  min-width: 100vw;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  text-align: center;
+<style scoped>
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    margin: 9vh 25vw;
+    width: 50vw;
+    height: 60vh;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    color: var(--first-color);
+    box-shadow: 0 0 0.5em var(--first-color);
+    padding: 3vh;
 }
+
 </style>

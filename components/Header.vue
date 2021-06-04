@@ -62,7 +62,7 @@
     flex-direction: row;
     justify-items: center;
     align-items: center;
-    color: white;
+    color: var(--primary-color);
     font-size: 1.5em;
     padding: 10vh;
 }

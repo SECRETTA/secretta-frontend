@@ -2,13 +2,13 @@
     <div class="navbar">
         <div class="brand">
             <img src="@/assets/img/logo.svg" class="logo"/>
-            <p class="title">secretta</p>
+            <nuxt-link to="/" style="margin-left:-0.5vw;"><p class="title">secretta</p></nuxt-link>
         </div>
         <div class="navlinks">
-            <NuxtLink to="/">Início</NuxtLink>
+            <!-- <NuxtLink to="/">Início</NuxtLink>
             <NuxtLink to="/docs">Documentação</NuxtLink>
             <NuxtLink to="/planos">Planos</NuxtLink>
-            <NuxtLink to="/admin/home">Admin*</NuxtLink>
+            <NuxtLink to="/admin/home">Admin*</NuxtLink> -->
         </div>
         <div class="button">
             <b-button pill prefetch=true to="/login" variant="outline-light">Login</b-button>
@@ -28,7 +28,7 @@
     flex-direction: row;
     align-items: center;
     max-height: 15vh;
-    color: white;
+    color: var(--first-color);
     font-size: 1.5em;
     padding: 3vh 5vw;
     top: 0;
@@ -36,19 +36,19 @@
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--first-color);
     margin: 0vw 3vw;
     display: inline;
 }
 
 a:hover {
-    color: white;
-    text-decoration: underline;
+    color: var(--first-color);
+    text-decoration: none;
 }
 
 a:active {
-    color: white;
-    text-decoration: underline;
+    color: var(--first-color);
+    text-decoration: none;
 }
 
 .logo {
@@ -86,6 +86,7 @@ a:active {
 .button {
     display: flex;
     position: relative;
+    align-items: center;
 }
 
 

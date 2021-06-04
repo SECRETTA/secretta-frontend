@@ -19,16 +19,17 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--first-color);
     font-size: 1em;
     position: relative;
     bottom: 5%;
     left: 0%;
-    margin-top: 30vh;
 }
 
 .icon {
     margin: 0vw 1vw;
 }
+
+
 
 </style>

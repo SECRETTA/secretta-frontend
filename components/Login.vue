@@ -15,6 +15,7 @@
                 placeholder="Senha"
                 required />
             <b-form-checkbox
+                class="login-input"
                 id="checkbox-1"
                 v-model="form.remember"
                 name="checkbox-1">
@@ -46,22 +47,17 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    padding: 15vh 0vw;
 }
 
 .login-form {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    padding: 2vh;
-    min-width: 30vw;
-    color: white;
-    box-shadow: 0 0 1em black;
 }
 
 .login-input {
     display: block;
-    margin: 1vh 0vw;
+    margin: 2vh 0vw;
     justify-self: center;
     background-color: transparent;
 }

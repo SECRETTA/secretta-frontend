@@ -1,11 +1,11 @@
-<template >
+<template>
     <div class="row">
-        <div class="img-content" data-aos="fade-right">
-            <b-img src="@/assets/img/4.png" />
+        <div class="text" data-aos-delay="200" data-aos="fade-right">
+            <h1>Personalize a sua disponibilidade</h1>
+            <p>Você pode estabelezer a sua disponibilidade de atendimento com base em um padrão semanal ou de forma personalizada, dia a dia.</p>
         </div>
-        <div class="text" data-aos="fade-left">
-            <h1>Disponível o tempo todo</h1>
-            <p>Sem mais preocupações quanto a marcar atendimentos fora do horário comercial.</p>
+        <div class="img-content" data-aos-delay="200" data-aos="fade-left">
+            <b-img src="@/assets/img/painel.png" />
         </div>
     </div>
 </template>
@@ -38,19 +38,19 @@
     position: relative;
     max-width: 45%;
     padding: 5vw;
-    margin: 1vw;
+    margin: 0.5vw;
 }
 
 .text {
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    text-align: left;
-    color: white;
+    justify-content: left;
+    text-align: right;
+    color: var(--first-color);
     position: relative;
     max-width: 45%;
     padding: 5vw;
-    margin: 1vw;
+    margin: 0.5vw;
 }
 
 p {
