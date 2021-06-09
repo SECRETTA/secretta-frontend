@@ -26,7 +26,7 @@
       methods:{
         registerEmail() {
           this.timestamp = new Date(Date.now()).toISOString().slice(0, 19).replace('T', ' ');
-          fetch('/api/email',
+          fetch('http://localhost:3001/api/email',
           {
             headers: { 'Content-Type': 'application/json'},
             method: 'post',
@@ -35,8 +35,9 @@
               'Timestamp': this.timestamp
             })
           })
-          .then(res => {
-            console.log(res);
+          .then(res => { res.json() })
+          .then(obj => {
+            console.log(obj);
           })
         }
       }
