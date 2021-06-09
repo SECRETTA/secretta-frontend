@@ -42,12 +42,21 @@
         ],
         items: [
           // {customer_name: 'João Adamastor', task_date:'27/5/2021', task_time:'9h'}
-        ]
+        ],
+        todayTasksIndex : []
       }
     },
     computed: {
       rows() {
         return this.items.length
+      },
+      tasksToday (){
+        let result = [];
+        for (let i=0; i < this.items.length; i++){
+          if (this.isToday(this.items[i]['task_date'])){
+            result.push(this.items[i]);
+          }
+        }
       }
     },
     created : function () {
@@ -56,24 +65,40 @@
     methods: {
       fetchTasks ()
       {
-        console.log('start-fetch')
-        fetch('http://localhost:3001/api/task/userid/1'/*,
-          {
-            headers: { 'Content-Type': 'application/json'},
-            method: 'get',
-          }*/)
-          .then(res => res.json())
-          .then(obj => {
-            console.log(obj);
-            console.log('len', obj['tasks'].length);
-            for (let i=0; i < obj['tasks'].length; i++){
-              let startDate = new Date(obj['tasks'][i]['start']);
-              let taskDate = String(startDate.getDate()) + '/' + String(startDate.getMonth() + 1) + '/' + String(startDate.getYear() - 100);
-              console.log(taskDate);
-              let newItem = {customer_name: obj['tasks'][i]['customerName'], task_date: taskDate, task_time:'9h'};
-              this.items.push(newItem);
-            }
-          })
+        fetch('http://localhost:3001/api/task/userid/1')
+        .then(res => res.json())
+        .then(obj => {
+          for (let i=0; i < obj['tasks'].length; i++){
+            let startDate = new Date(obj['tasks'][i]['start']);
+
+            let taskDate = String(startDate.getDate()) + '/' + String(startDate.getMonth() + 1) + '/' + String(startDate.getYear() - 100);
+            let taskTime = this.getFormattedTime(startDate);
+
+            let newItem = {customer_name: obj['tasks'][i]['customerName'], task_date: taskDate, task_time: taskTime};
+            this.items.push(newItem);
+          }
+        })
+      },
+      getFormattedTime(date) {
+        let hours = String(date.getHours());
+        if (hours.length == 1){
+
+          hours = '0' + hours;
+        }
+        let minutes = String(date.getMinutes());
+        if (minutes.length == 1){
+
+          minutes = '0' + minutes;
+        }
+        let seconds = String(date.getSeconds());
+        if (seconds.length == 1){
+
+          seconds = '0' + seconds;
+        }
+
+        return hours + ':' +
+               minutes + ':' +
+               seconds;
       }
     },
   }
